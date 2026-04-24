@@ -1,6 +1,7 @@
 # Scenario: Promotion Effectiveness at a Fashion Retail Chain
 ## B1. Problem Formulation
 ### (a) Formulating the Machine Learning Problem
+------------------------------------------------------------------
 **Target Variable:**
 Number of items sold 
 
@@ -23,10 +24,12 @@ So a regression model is appropriate because:
 - Unlike classification, which only identifies the best promotion, this approach shows how much each promotion differs in sales, making comparisons clearer and more meaningful.
 
 
+
+
 ### (b) Choosing the Right Target Variable for Business Alignment
+------------------------------------------------------------------
 
 **Why “Items Sold” is a Better Target than Revenue**
------------------------------------------------------
 Using items sold (sales volume) is more reliable than total revenue in this scenario because:
 
 - **Promotions directly affect price:**
@@ -39,20 +42,21 @@ Using items sold (sales volume) is more reliable than total revenue in this scen
   The stated goal is to maximize the number of items sold, so using sales volume directly ensures the model is optimized for the correct outcome.
 
 **Broader Principle for target variable selection**
---------------------------------------------------
 The target variable should directly reflect the true business objective and be minimally distorted by external or confounding factors.
 
+
+
+
 ### (c) Alternative Modelling Strategy to Capture Store-Level Differences
+------------------------------------------------------------------
 
 **Alternative Modelling Strategy**
-----------------------------------
 Instead of one global model, use a segmented or hierarchical modelling approach.
 This approach allows the model to learn both:
 - Common patterns across all stores, and
 - Differences specific to store types or individual stores
 
 **How to Implement**
--------------------
 *Step 1: Segment the stores*
 Group stores based on:
 - Location (urban / semi-urban / rural)
@@ -70,19 +74,16 @@ Group stores based on:
   - “Discounts work better in rural stores”
 
 **Why This is Needed**
-----------------------
 - Stores in different locations behave differently
 - The same promotion can give different results in different stores
 - Customer preferences and spending power vary by location
 
 **Problem with a Single Global Model**
--------------------------------------
 - It assumes all stores behave the same
 - It averages out important differences
 - It can give less accurate and generic predictions
 
 **Benefits of the Proposed Approach**
-------------------------------------
 - Captures local variations in promotion response
 - Gives more accurate predictions
 - Helps choose better promotions for each store type
