@@ -1,6 +1,6 @@
 # Scenario: Promotion Effectiveness at a Fashion Retail Chain
 ## B1. Problem Formulation
-### (a) 
+### (a) Formulating the Machine Learning Problem
 **Target Variable:**
 Number of items sold 
 
@@ -23,7 +23,7 @@ So a regression model is appropriate because:
 - Unlike classification, which only identifies the best promotion, this approach shows how much each promotion differs in sales, making comparisons clearer and more meaningful.
 
 
-### (b) 
+### (b) Choosing the Right Target Variable for Business Alignment
 
 **Why “Items Sold” is a Better Target than Revenue**
 -----------------------------------------------------
@@ -42,7 +42,7 @@ Using items sold (sales volume) is more reliable than total revenue in this scen
 --------------------------------------------------
 The target variable should directly reflect the true business objective and be minimally distorted by external or confounding factors.
 
-### (c)
+### (c) Alternative Modelling Strategy to Capture Store-Level Differences
 
 **Alternative Modelling Strategy**
 ----------------------------------
