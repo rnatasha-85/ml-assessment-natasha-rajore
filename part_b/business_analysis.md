@@ -57,6 +57,7 @@ This approach allows the model to learn both:
 - Differences specific to store types or individual stores
 
 **How to Implement**
+
 *Step 1: Segment the stores*
 Group stores based on:
 - Location (urban / semi-urban / rural)
